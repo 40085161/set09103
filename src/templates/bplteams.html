@@ -1,0 +1,15 @@
+<!doctype html>
+<head>
+<link rel="stylesheet" type="text/css" href="/static/style.css"/>
+</head>
+
+<body>
+{% include "header.html" %}
+
+{% for team in teamName %}
+<a class="lp" id="list" href="{{ url_for('team', team=team, index=loop.index0) }}">{{team}}</a><br />
+{% endfor %}
+
+{% include "footer.html" %}
+</body>
+</html>

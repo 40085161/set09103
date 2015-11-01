@@ -1,0 +1,11 @@
+<!doctype html>
+  <head>
+  </head>
+
+<body>
+
+{% for team in teamName %}
+  <a href="/bpl/{{team}}">{{team}}</a><br />
+{% endfor %}
+</body>
+</html>
