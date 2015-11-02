@@ -32,7 +32,7 @@ def bplLink():
   'Watford', 'West Bromwich Albion', 'West Ham United']
   return render_template('bplteams.html', teamName=teamName)
 
-app.route('/bpl/<team>')
+@app.route('/bpl/<team>')
 def team(team):
   index = int(request.args.get('index', 0))
   stadium = ['Dean Court', 'Emirates Stadium', 'Villa Park', 'Stamford Bridge',
